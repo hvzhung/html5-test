@@ -11,39 +11,46 @@
 	cellpadding 单元格内容距边框的距离
 	align 子标签对其方式 left 左对齐 right 右对齐 center 居中
 	bgcolor 背景颜色 -->
-	<table border="1" width="500" height="500" cellspacing="1" cellpadding="20" bgcolor="red">
+	<!-- 快速建表结构  	table>tr*3>td*3 -->
+
+	<table border="1" bordercolor="yellow" width="500" height="500" cellspacing="1" cellpadding="20" bgcolor="red">
+		<caption>表格练习</caption>
 		<thead align="center" border="20" bgcolor="blue">
 			<tr>
-				<td>表头1</td>
-				<td>表头2</td>
-				<td>表头3</td>
+				<th>表头1</th>
+				<th>表头2</th>
+				<th>表头3</th>
 			</tr>
 		</thead>
 		<tbody align="center">
 			<tr align="center">
-				<td align="center">111</td>
-				<td>222</td>
-				<td>333</td>
+				<!-- clospan 合并列 -->
+				<th align="center" colspan="2">111</th>
+				<!-- <td>222</td> -->
+				<!-- rowspan 合并行 -->
+				<td rowspan="2">333</td>
 			</tr>
 			<tr>
-				<td>aaa</td>
-				<td>bbb</td>
-				<td>ccc</td>
+				<th valign="top">aaa</th>
+				<td valign="bottom">bbb</td>
+				<!-- <td>ccc</td> -->
 			</tr>
 			<tr>
-				<td>aaa</td>
+				<th>aaa</th>
 				<td>bbb</td>
 				<td>ccc</td>
 			</tr>
 		</tbody>
-		<tfoot align="center">
-			<tr>
-				<td>表尾1</td>
+		<tfoot align="right">
+			<tr align="left">
+				<th>表尾1</th>
 				<td>表尾2</td>
 				<td>表尾3</td>
 			</tr>
 		</tfoot>
 
+
 	</table>
+
 	</body>
 </html>
