@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>块元素转行内元素</title>
+	<style type="text/css">
+	/*块元素转换为行元素*/
+		div,p{
+			display: inline;
+		}
+
+		/*行元素转换为块元素*/
+		span{
+			display: block;
+			width: 200px;
+			height: 200px;
+			text-align: center;
+		}
+		 
+	</style>
+</head>
+<body>
+	<div>div标签</div>
+	<p>p标签</p>
+	<br>
+	<span>第一个span</span>
+	<span>第二个span</span>
+	<br>
+	 
+		
+
+	<br>
+	<p>
+		<ol>
+			<li>display设置为inline后不能设置宽高</li>
+			<li></li>
+			<li></li>
+		</ol>
+	</p>
+</body>
+</html>
