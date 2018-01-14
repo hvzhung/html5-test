@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>边框</title>
+	<style type="text/css">
+		div{
+			width: 300px;
+			height:300px;
+			background-color: green;
+			border-top-style: solid; /*solid 视线|dottod 点线| dashed| 虚线*/
+			border-top-color: red;
+			border-top-width: 10px;
+			border-left-style: solid;
+			border-left-color: yellow;
+			border-left-width: 10px;
+			border-bottom-style: dashed;
+			border-bottom-color: orange;
+			border-bottom-width: 10px;
+
+		}
+		.d{
+			width: 300px;
+			height:300px;
+			background-color: red;
+		/*边框属性连写，没有顺序要求，但是style必须有*/
+			border-top: orange 4px dashed;
+		}
+	</style>
+</head>
+<body>
+	<div ></div>
+	<div class="d"></div>
+</body>
+</html>

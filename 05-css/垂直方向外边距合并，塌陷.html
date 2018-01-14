@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*外边距合并*/
+		.one{
+			width: 300px;
+			height: 300px;
+			background-color: red;
+			margin-bottom: 100px;
+		}
+		.two{
+			margin-top: 100px;
+			width: 200px;
+			height: 200px;
+			background-color: green;
+		}
+		/*外边距塌陷
+		当嵌套标签直接给盒子设置外边距的时候父标签也会受影响
+		设置父标签的border可以解决（不推荐）
+		设置overflow:hidden*/
+		.father{
+			width: 300px;
+			height: 300px;
+			background-color: pink;
+			/*border: 1px solid transparent;*/
+			overflow: hidden;
+		}
+		.son{
+			margin-top: 10px;
+			width: 200px;
+			height: 200px;
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+	<div class="one"></div>
+	<div class="two"></div>
+	<br>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>

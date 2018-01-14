@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单案例</title>
+	<style type="text/css">
+		.class1{
+			 background-color: gray;
+	
+			 /*border: 1px dashed black;*/
+			 border: 0 none;/*去掉边框*/
+			 outline-style: none;/*去掉轮廓线*/
+		}
+		.class1:focus{
+			background-color: pink;
+		}
+		.class2{
+		 	border:0 none;
+			border-bottom: 1px red solid;
+		 outline-style: none;
+		}
+		.class3{
+			
+		}
+	</style>
+</head>
+<body>
+	 <label for="class1">用户名：</label> <input class="class1" id="class1" type="text" name="user"><br><br>
+	 <label for="class2">邮箱：</label><input class="class2" id="class2" type="email" name="user"><br><br>
+	 <label for="class3">搜索一下：</label><input class="class3" id="class3" type="text" name="">
+</body>
+</html>

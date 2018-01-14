@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.father{
+			width: 500px;
+			height:500px;
+			background-color: gray;
+		}
+		/*子标签没有定义宽度或者定义的宽度小于父标签宽度，子标签定义的padding不会在宽度上撑大父标签*/
+		.son{
+			height: 250px;
+			/*width: 500px;*/
+			width: 499;
+			padding-left: 300px;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>
