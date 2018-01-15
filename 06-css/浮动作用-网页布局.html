@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网页布局</title>
+	<style type="text/css">
+		.father{
+			width: 1000px;
+			/*height: 420px;*/
+			padding: 1px;
+			border:1px solid gray;
+			margin: 0 auto;
+
+		}
+		.father div{
+			color: white;
+			
+ 			text-align: center;
+
+		}
+		.header{
+	 		width: 1000px;
+			height: 100px;
+			background-color: black;
+			margin-bottom: 10px;
+			line-height: 100px;
+
+		}
+		.content{
+			height: 200px;
+			width: 590px;
+			background-color: gray;
+			margin-right: 10px;
+			line-height: 200px;
+			float: left;
+
+		}
+		.sidebar{
+			height: 200px;
+			width: 400px;
+			 background-color: black;
+			 line-height: 200px;
+			 float: left;
+
+		}
+		.footer{
+			height: 100px;
+			width: 1000px;
+			margin-top: 10px;
+			background-color: black;
+			line-height: 100px;
+			/*clear: both;*/
+		}
+		/*清除浮动*/
+		.clearfix:after{
+			content: "";
+			display: block;
+			height: 0;
+			line-height: 0;
+			visibility: hidden;
+			clear: both;
+		}
+		/*兼容ie*/
+		.clearfix{
+			zoom:1;
+			/*overflow: hidden;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="father clearfix">
+		<div class="header">header</div>
+		<div class="clearfix">
+			<div class="content">content</div>
+			<div class="sidebar">sidebar</div>
+		 </div>
+		<div class="footer" >footer</div>
+	</div>
+</body>
+</html>
