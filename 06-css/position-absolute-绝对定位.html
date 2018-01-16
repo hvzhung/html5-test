@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位</title>
+	<style type="text/css">
+		.box{
+			width: 50px;
+			height: 50px;
+			background: red;
+			position: absolute;
+			left: 30px;
+			 
+		}
+		.father{
+			width: 100px;
+			height: 100px;
+			background: gray;
+			position: absolute;
+			left: 20px;
+		
+		}
+		.box1{
+			width: 100px;
+			height: 100px;
+			background: green;
+			position: absolute;
+			top: 50px;
+			left: 40px;
+		}
+		 
+		.z1{
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			background: red;
+			z-index: 1;
+			left: 1px;
+		}
+		.z2{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			background: green;
+			z-index: 2;
+			left: 20px;
+		}
+		.z3{
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			background: blue;
+			z-index: 3;
+			left: 30px;
+		}
+
+	</style>
+</head>
+<body>
+	<div>1.元素使用绝对定位之后不会占据原来的位置<br>
+	2.使用绝对定位，位置从浏览器出发<br>
+	3.嵌套的盒子，子盒子没有相对父盒子定位<br>
+	4.嵌套的父盒子也使用了绝对定位，子盒子相对父盒子定位<br>
+	5.行内元素使用了绝对定位会变为行内块
+	<br>
+	6.z-index调整元素的层叠顺序，值越大越靠上
+	</div>
+ 
+	<!-- <div class="father">
+	<div class="box"></div>
+	</div>
+	<span class="box1"></sapn> -->
+	 
+	<div style="width: 500px;height: 500px;">
+		<div class="z1"></div>
+		<div class="z2"></div>
+		<div class="z3"></div>
+	</div>
+	
+</body>
+</html>

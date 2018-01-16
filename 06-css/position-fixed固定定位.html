@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>固定定位</title>
+	<style type="text/css">
+		.box,.box1{
+			width: 100px;
+			height: 100px;
+		}
+		.box{
+			background: red;
+			position: fixed;
+			top: 0;
+			right: 0;
+		}
+		.box1{
+			background: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box1"></div>
+	<div>固定定位之后不占据原来位置（脱标）</div>
+	<div>固定定位位置从浏览器出发</div>
+	<div>元素使用固定定位之后会转化为行内块</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>相对定位</title>
+	<style type="text/css">
+	.red,.green{
+		width: 200px;
+		height: 200px;
+		position: relative;
+	}
+		.red{
+			background: red; 
+			top: 100px;
+		}
+		.green{
+			background: green;
+			right: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="red"></div>
+	<div class="green"></div>
+	<div><strong>相对定位特点</strong><br>
+		1.相对于自身定位<br>
+		2.还占据原来位置<br>
+		3.父元素相对定位，子元素绝对定位 <br>
+		4.行内元素使用相对定位不能转行内块
+		<br>
+	</div>
+</body>
+</html>
