@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>上合首页</title>
+	<style type="text/css">
+		body,h1,h2,h3,h4,h5,h6,p,ul,dl,dd{
+				margin: 0;
+				padding: 0;
+			}
+		body,h1,h2,h3,h4,h5,h6,p{
+				font-size:12px;
+				font-family: "宋体","微软雅黑";
+			}
+		input{
+				border:0 none;
+				outline-style: none;  /*清除轮廓线*/
+			}
+			img{
+				border:0 none;
+			}
+			a{
+				text-decoration: none;
+			}
+		/*水平居中*/
+		.horizontal-center{
+			width: 980px;
+		 
+			margin: 0 auto;
+			
+		}
+		.header{
+			
+
+		}
+		.logo{
+			width: 179px;
+				height: 39px;
+			float: left;
+			margin-top:20px;
+		}
+		.search{
+			float: right;
+			border:1px solid #ECECEC;
+			margin-top:20px;
+		}
+		.txt{
+				width: 165px;
+				height: 28px;
+				float:left;
+			}
+		.search .btn{
+				width:30px;
+				height: 30px;
+				background: url("images/search2.jpg");
+				float:right;
+			}
+	</style>
+</head>
+<body>
+	<!-- 头部，最上面 -->
+	<div class="horizontal-center header">
+		<!-- loggo -->
+		<img  class="logo"  src="images/logo.jpg">
+		<!-- 搜索部分 -->
+		<div class="search">
+			<input type="text" value="请输入..." class="txt">
+			<input type="button" class="btn">
+		</div>
+	</div>
+</body>
+</html>
