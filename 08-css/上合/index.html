@@ -35,7 +35,7 @@
 		}
 		.logo{
 			width: 179px;
-				height: 39px;
+			height: 39px;
 			float: left;
 			margin-top:20px;
 		}
@@ -55,6 +55,31 @@
 				background: url("images/search2.jpg");
 				float:right;
 			}
+		.nav{
+			background: url("images/nav_bg.png");
+			clear: both;
+			height: 55px;
+			border-top: 1px solid #E1E1E1;
+		}
+
+		.nav ul li{
+			list-style: none;
+			display: inline-block;
+			float: left;
+			
+
+		}
+		.nav ul li a{
+			line-height: 55px;
+			font-weight: 700;
+			color: #000;
+			display: inline-block;
+			background: url("images/nav_bg-line.png") no-repeat right top;
+			padding: 0 46px;
+		}
+		.nav ul li a:hover{
+			color: #7CB609;
+		}
 	</style>
 </head>
 <body>
@@ -66,6 +91,19 @@
 		<div class="search">
 			<input type="text" value="请输入..." class="txt">
 			<input type="button" class="btn">
+		</div>
+	</div>
+	<!-- 顶部导航 -->
+	<div class="nav">
+		<div class="horizontal-center nav-center">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">只能手机</a></li>
+				<li><a href="#">平板电脑</a></li>
+				<li><a href="#">配件</a></li>
+				<li><a href="#">服务支持</a></li>
+				<li><a href="#">关于尚合</a></li>
+			</ul>
 		</div>
 	</div>
 </body>
