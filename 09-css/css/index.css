@@ -1,0 +1,382 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body,div,p,ul,li{
+	font: 12px 宋体;
+}
+img,input{
+	border: 0 none;
+}
+input{
+	outline-style: none;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+ul li{
+	list-style: none;
+}
+.test-block{
+	border: 1px solid green;
+}
+.clearfix:after{
+	display: block;
+	content: "";
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.clearfix{
+	zoom:1;
+}
+.horizontal-center{
+	width: 980px;
+	margin: 0 auto;
+}
+
+/*顶部导航*/
+.top-nav{
+	height: 26px;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #D8D8D8;
+	background: #F7F7F7;
+}
+.welcome{
+	float: left;
+	height: 26px;
+	line-height: 26px;
+}
+.top-nav-right{
+	float: right;
+	height: 26px;
+}
+.top-nav-right li{
+	float: left;
+	height: 26px;
+	line-height: 26px;
+}
+.top-nav-right li a{
+	padding: 0px 10px 0px 5px;
+	height: 26px;
+	line-height: 26px;
+	background: url("../images/sj.png") no-repeat right;
+}
+/*搜索部分*/
+.logo{
+	float: left;
+}
+.search{
+	float: right;
+	width: 528px;
+	height: 40px;
+	border: 1px solid #C9C9C9;
+	margin-top: 30px;
+	background: #F5F5F5;
+}
+.search input[type="text"]{
+	float: left;
+	border: 1px solid #A6A6A6;
+	width: 419px;
+	height: 28px;
+	margin: 5px 0 0 4px;
+}
+.search input[type="button"]{
+	float: left;
+	width: 99px;
+	height: 30px;
+	margin-top: 5px;
+	background: blue;
+	color: white;
+	font-size: 18px;
+}
+.nav{
+	height: 25px;
+	margin-top: 12px;
+	border-bottom: 3px solid #0266A2;
+}
+.nav li{
+	float: left;
+	
+}
+.nav a{
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 16px;
+	color: #2F6CAD;
+}
+.home{
+
+	margin-top: 10px;
+}
+.home-left{
+	float: left;
+	width: 200px;
+	height: 210px;
+	background: #EBF0F6;
+}
+.home-left .agora{
+	height: 30px;
+	line-height: 30px;
+	color: #FFF;
+	padding-left: 20px;
+	background: #0266A2;
+}
+.home-left ul li a{
+	height: 28px;
+	line-height: 28px;
+	padding-left: 35px;
+}
+.home-left .icon1{
+	background: url("../images/icon_1.png") no-repeat 9px;
+}
+.home-left .icon2{
+	background: url("../images/icon_2.png") no-repeat 9px;
+}
+.home-left .icon3{
+	background: url("../images/icon_3.png") no-repeat 9px;
+}
+.home-left .icon4{
+	background: url("../images/icon_4.png") no-repeat 9px;
+}
+.home-left .icon5{
+	background: url("../images/icon_5.png") no-repeat 9px;
+}
+.home-left .icon6{
+	background: url("../images/icon_6.png") no-repeat 9px;
+}
+.home-mid{
+	float: left;
+	width: 520px;
+	height: 212px;
+}
+.home-right{
+	float: right;
+}
+.home-right .adv2{
+	margin-top: 10px;
+}
+.architecture{
+	margin-top: 15px;
+}
+.artware{
+	margin-top: 15px;
+}
+/*建筑材料，儿童座椅等分类标题通用样式*/
+.title{
+	height: 34px;
+	line-height: 34px;
+	border-top: 2px solid #C3D6E4;
+	background: #EBF0F6;
+	padding-left: 22px;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.architecture-list{
+	float: left;
+	border: 1px solid #D8D8D8;
+	width: 727px;
+	margin-top: 10px;
+}
+.architecture-msg{
+	float: right;
+	border: 1px solid #DFE6F0;
+	width: 228px;
+	height: 355px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.architecture-msg-title{
+	padding-left: 15px;
+	height: 28px;
+	line-height: 28px;
+	border-bottom: 1px solid #DFE6F0;
+	background: #FBFBFB;
+}
+.architecture-msg ul{
+	margin-top: 11px;
+}
+.architecture-msg ul li{
+	height: 24px;
+	line-height: 24px;
+	padding-left: 25px;
+	background: url("../images/li_bg.png") no-repeat 10px;
+}
+ .pro-row{
+	padding:15px 26px;
+}
+.line{
+	border-top: 1px solid #eee;
+	margin: 0 5px;
+}
+.line1{
+	border-top: 1px solid #eee;
+	margin: 10px 0 ;
+}
+.pro{
+ 
+	
+}
+.pro-left{
+	float: left;
+}
+.pro-right{
+	float: right;
+}
+.pro .img {
+	float: left;
+}
+.pro .img div{
+	width: 99px;
+	height: 102px;
+	border: 1px solid #CACACA;
+}
+.pro .img div img{
+	display: block;
+	margin: 19px auto auto auto;
+}
+.pro .img input{
+	line-height: 28px;
+	height: 28px;
+	margin-top: 15px;
+	width: 99px;
+	text-align: center;
+	color: white;
+	font-weight: 700;
+	font-size: 18px;
+	background: #2F6CAD;;
+}
+.pro .referral{
+	float: left;
+	margin-left: 10px;
+}
+.pro p{
+	font-size: 14px;
+}
+.pro .referral .pro-referral-title{
+	height: 38px;
+	line-height: 38px;
+}
+.pro .referral .pro-referral-price{
+	margin-top: 20px;
+}
+.pro .referral .pro-referral-price span{
+	color: red;
+	font-size: 16px;
+	font-weight: 700;
+	margin-right: 5px;
+}
+.pro .referral .pro-referral-surplus{
+	margin-top: 20px;
+}
+.chair .title{
+	margin: 10px 0;
+ }
+ .chair-left{
+ 	width: 722px;
+ 	float: left;
+ }
+ .chair-right{
+ 	float: right;
+ }
+ .chair-right img{
+ 	display: block;
+ 	border: 1px solid #eee;
+ }
+ .chair-top{
+ 	height: 25px;
+ 	line-height: 25px;
+ 	color: #00b0e7;
+ 	text-align: right;
+ 	font-size: 14px;
+ 	font-weight: 700;
+ 	background: url("../images/et.png") no-repeat ;
+ 	
+ }
+ .chair-pro-list{
+ 	height: 301px;
+ 	border: 1px solid #eee;
+ 	border-top: 2px solid #01B0E7;
+ }
+ .chair-pro{
+	width: 160px;
+	margin: 5px 0 0 15px;
+	float: left;
+ }
+ .chair-pro .name{
+	text-align: center;
+	margin-top: 10px;
+ }
+  .chair-pro .age{
+	text-align: center;
+	margin-top: 15px;
+ }
+.chair-pro .price{
+	text-align: center;
+	margin-top: 10px;
+
+ }
+.chair-pro .price del{
+	 
+color: red;
+ }
+.chair-pro .price-real{
+	text-align: center;
+	margin-top: 10px;
+ }
+ .chair-pro .price-real span{
+	color: red;
+ }
+ .artware .title{
+	margin: 10px 0;
+ }
+.artware-left{
+	float: left;
+	width: 
+}
+.artware-right{
+	float: right;
+}
+.flink{
+	margin-top: 20px;
+	border-top:1px solid #DDD;
+	border-bottom: 3px solid #097EC3;
+	padding-top: 20px;
+	height: 100px;
+	margin-bottom: 20px;
+}
+.text-flink{
+	float: left;
+	height: 100px;
+}
+.flink div{
+	float: left;
+}
+.flink li{
+	float: left;
+	padding: 0 4px;
+	margin-bottom: 15px;
+}
+a:hover{
+	color:red;
+	text-decoration: underline;
+}
+.about{
+	text-align: center;
+}
+.about ul {
+	text-align: center;
+	display: inline-block;
+}
+.about li{
+	float: left;
+	padding: 0  10px;
+	border-right: 1px solid #eee;
+}
+.about p{
+	margin: 10px 0;
+}
