@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		var n1 = 12.12;
+
+		var n2 = 24.56;
+		var ceil = Math.ceil(n1);//向上取整
+		var ceil1 = Math.ceil(n2);
+		console.log("ceil = "+ceil+"  ceil1 = "+ceil1);
+		//向下取整
+		var n3 = 11.11;
+		var n4 = 99.99;
+		n3 = Math.floor(n3);
+		n4 = Math.floor(n4);
+		console.log(n3+"\n"+n4);
+		//最值
+		var n5 = Math.min(n3,n4);
+		var n6 = Math.max(n3,n4);
+		console.log("较大值 "+n6+" 较小值"+n5);
+
+		//n次方
+		var n7 = Math.pow(2,10);
+		console.log("二的十次方等于"+n7);
+
+		//随机数
+		var n8 = Math.random();
+		console.log("随机数"+n8);
+
+		//55-120之间的数
+		
+		for(var i =0;i<1000;i++){
+			 
+			while(n9=Math.random()<0.55){
+				if(n9>=0.55){
+					n9 = n9*120;
+					break;
+				}else{
+					console.log("不合格随机数"+n9);
+				}
+			n9 = n9*120;
+		n9 = Math.ceil(n9);
+		console.log("随机数55~120  "+n9);
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
