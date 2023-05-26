@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
 	<meta charset="UTF-8">
 	<title>表格练习</title>
 </head>
-<body >
+
+<body>
 	<!-- border 边线
 	width heiht 宽高
 	cellspacing 单元格间的距离
@@ -36,14 +38,25 @@
 				<!-- <td>ccc</td> -->
 			</tr>
 			<tr>
+
 				<th>aaa</th>
 				<td>bbb</td>
 				<td>ccc</td>
 			</tr>
 		</tbody>
 		<tfoot align="right">
-			<tr align="left">
-				<th>表尾1</th>
+			<tr align="right">
+				<th rowspan="3">表尾1</th>
+				<td colspan="2">表尾2</td>
+				<!-- <td>表尾3</td> -->
+			</tr>
+			<tr align="right">
+				<!-- <th>表尾1</th> -->
+				<td>表尾2</td>
+				<td>表尾3</td>
+			</tr>
+			<tr align="right">
+				<!-- <th>表尾1</th> -->
 				<td>表尾2</td>
 				<td>表尾3</td>
 			</tr>
@@ -52,5 +65,6 @@
 
 	</table>
 
-	</body>
+</body>
+
 </html>
